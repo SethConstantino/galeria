@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"/>
+    <script src="registroServiceWorker.js"></script>
+
+    <title>Fórmula 1</title>
+
+    <style>@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background: #fdfdfd;
+            font-family: "Nunito", sans-serif;
+            font-size: 1rem;
+        
+        
+        }
+        
+        main{
+            max-width: 900px;
+            margin: auto;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ba1111;
+        }
+        
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        
+        li{
+            margin-right: 1rem;
+        }
+        
+        h1{
+            margin-bottom: 0.5rem;
+            color: #fdfdfd;
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+            grid-gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 1rem 0;
+        }
+        
+        .card{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 15rem;
+            height: 15rem;
+            background: #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            border-radius: 10px;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .card-avatar{
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+        }
+        
+        .card-title{
+            color: #222;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }</style>
+
+</head>
+<body>
+    <main>
+        <nav  >
+            <h1>Fórmula 1</h1>
+            <ul>
+                <li>Pilotos</li>
+                <li>Equipos</li>
+                <li>Clasificación</li>
+            </ul>
+        </nav>
+        
+        <style>
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+    
+            .card {
+                flex: 0 0 30%; /* Esto determina el ancho de cada tarjeta */
+                max-width: 30%; /* Puedes ajustar esto según tus preferencias */
+                margin-bottom: 20px; /* Espacio entre las tarjetas */
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+    
+            .card img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card-container">
+        <div class="card">
+            <img src="img/carro1.webp" alt="Descripción de la imagen">
+        </div>
+        <div class="card">
+            <img src="img/carro2.jpeg" alt="Descripción de la imagen">
+        </div>
+        <div class="card">
+            <img src="img/carro3.avif" alt="Descripción de la imagen">
+        </div>
+    </div>
+    </main>
+    <script src="serviceWorker.js"></script>
+</body>
+</html>
